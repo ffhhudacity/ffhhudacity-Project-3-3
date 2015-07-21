@@ -76,8 +76,8 @@ Player.prototype.handleInput = function(key) {
 //Reset player method//
 // Changed the object to player below to relfect on reviewer's suggestion for 4th submission.//
 Player.prototype.reset = function() {
-  player.x = 200;
-  player.y = 400;
+  this.x = 200;
+  this.y = 400;
 };
 
 
