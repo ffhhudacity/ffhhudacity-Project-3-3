@@ -5,6 +5,9 @@ Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015
 
 for self-checking their submission.
 
+Improvements made for 4th submission.
+	1. Took reviewer's suggestion to change the object.prototype.reset to player.prototype.reset since there is only one player in this object, also updated the call to player.reset. Thanks!
+
 Improvements made for 3rd submission with js/app.js based on reviewer's comments.
 	1. Changed the constants style according to the guide.
 
