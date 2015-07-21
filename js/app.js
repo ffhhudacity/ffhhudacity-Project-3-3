@@ -26,9 +26,10 @@ Enemy.prototype.update = function(dt) {
       this.speed = (Math.random() * (MAXSPEED - MINSPEED) + MINSPEED);
     }
 // reset the game if player hits a bug's proximity by 30px//
+// Changed this.reset to player.reset below to relfect on reviewer's suggestion for 4th submission.//
     if(player.x >= this.x - 30 && player.x <= this.x + 30) {
       if(player.y >= this.y - 30 && player.y <= this.y + 30) {
-        this.reset();
+        player.reset();
       }
     }
 };
@@ -72,8 +73,9 @@ Player.prototype.render = function() {
 Player.prototype.handleInput = function(key) {
   this.ctlKey = key;
 };
-//Reset player method
-Object.prototype.reset = function() {
+//Reset player method//
+// Changed the object to player below to relfect on reviewer's suggestion for 4th submission.//
+Player.prototype.reset = function() {
   player.x = 200;
   player.y = 400;
 };
